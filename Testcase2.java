@@ -4,17 +4,17 @@ import generics.Maximum;
 
 /*
  * this is test case 
- * max number is in second position
- * this will display number in second position as maximum
+ * max String is in second position
+ * this will display String in second position as maximum
  */
 public class Testcase2 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Maximum<Float> maxfloat = new Maximum<>(100.25f, 3000.25f, 500.26f);
-		System.out.println("Maximum is");
-		System.out.println(maxfloat.maximum());
+Maximum<String> maxstring = new Maximum<>("Apple","Peach","Banana");
+		
+		System.out.println(maxstring.maximum());
 	}
 
 }
