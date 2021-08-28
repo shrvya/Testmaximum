@@ -5,30 +5,30 @@ package generics;
  * it has a method maximum to find maximum
  * it has 3 testcases
  */
-public class Maximum<Integer extends Comparable<Integer>> {
+public class Maximum<Float extends Comparable<Float>> {
 
-	public Integer x;
-	public Integer y;
-	public Integer z;
+	public Float x;
+	public Float y;
+	public Float z;
 
 	/*
 	 * this is a constructor to initialize parameters
 	 */
-	Maximum(Integer x, Integer y, Integer z) {
+	Maximum(Float x, Float y, Float z) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	Integer max;
+	Float max;
 
 	/*
-	 * this is a method to find maximum value out of 3 integer numbers this method
+	 * this is a method to find maximum value out of 3 numbers of float type this method
 	 * uses compareTo method to find maximum initially first number is assumed to be
 	 * max and assigned to variable max after comparing max with all other numbers
 	 * real max number is returned
 	 */
-	public Integer maximum() {
+	public Float maximum() {
 		max = x;
 
 		if ((max.compareTo(y)) < 0) {

@@ -12,9 +12,9 @@ public class Testcase3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		Maximum<Integer> maxint = new Maximum<>(100, 3000, 5500);
+		Maximum<Float> maxfloat = new Maximum<>(100.25f, 3000.26f, 5500.45f);
 		System.out.println("Maximum is");
-		System.out.println(maxint.maximum());
+		System.out.println(maxfloat.maximum());
 	}
 
 }
