@@ -1,34 +1,35 @@
 package generics;
 
 /*
- * this class will will find maximum of 3 strings
+ * this class will will find maximum of 3 inputs of different type
  * it has a method maximum to find maximum
+ * print method will print
  * it has 3 testcases
  */
-public class Maximum<String extends Comparable<String>> {
+public class Maximum<T extends Comparable<T>> {
 
-	public String x;
-	public String y;
-	public String z;
+	public T x;
+	public T y;
+	public T z;
 
 	/*
 	 * this is a constructor to initialize parameters
 	 */
-	Maximum(String x, String y, String z) {
+	Maximum(T x, T y, T z) {
 		this.x = x;
 		this.y = y;
 		this.z = z;
 	}
 
-	String max;
+	T max;
 
 	/*
-	 * this is a method to find maximum value out of 3 strings. this method uses
-	 * compareTo method to find maximum .initially first string is assumed to be max
-	 * and assigned to variable max. after comparing max with all other strings real
-	 * max string is returned
+	 * this is a method to find maximum value out of 3 inputs. this method uses
+	 * compareTo method to find maximum .initially first input value is assumed to
+	 * be max and assigned to variable max. after comparing max with all other
+	 * inputs max value is returned
 	 */
-	public String maximum() {
+	public T maximum() {
 		max = x;
 
 		if ((max.compareTo(y)) < 0) {
@@ -37,12 +38,16 @@ public class Maximum<String extends Comparable<String>> {
 		if ((max.compareTo(z)) < 0) {
 			max = z;
 		}
-		print(x,y,z,max);
+		print(x, y, z, max);
 		return max;
 	}
-private void print(String x, String y, String z, String max) {
+
+	/*
+	 * this method will print max value
+	 */
+	private void print(T x, T y, T z, T max) {
 		// TODO Auto-generated method stub
-		System.out.println("max of 3 strings "+x+" "+y+" "+z+" is:"+max);
+		System.out.println("max of " + x + " " + y + " " + z + " is:" + max);
 	}
 
 }
