@@ -79,7 +79,7 @@ public class Maximum<T extends Comparable<T>> {
 	 */
 	private void printFour(T v, T x, T y, T z, T max) {
 		// TODO Auto-generated method stub
-		System.out.println("max of " + v + ", " + x + ", " + y + ", " + z + " is:" + max);
+		System.out.printf("max of %s,%s,%s,%s is: %s\n", v,x,y,z, max);
 	}
 
 	/*
@@ -87,7 +87,7 @@ public class Maximum<T extends Comparable<T>> {
 	 */
 	private void printThree(T x, T y, T z, T max) {
 		// TODO Auto-generated method stub
-		System.out.println("max of " + x + ", " + y + ", " + z + " is:" + max);
+		System.out.printf("max of " + x + ", " + y + ", " + z + " is:" + max);
 	}
 
 }
